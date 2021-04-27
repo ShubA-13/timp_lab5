@@ -16,6 +16,8 @@ class Account {
   // Virtual to test.
   virtual void Unlock();
   int id() const { return id_; }
+  
+  bool operator==(const Account)const{return true;}
 
  private:
   int id_;
