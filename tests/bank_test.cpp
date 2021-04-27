@@ -17,7 +17,7 @@
 
   class MockTransaction: public Transaction{
 
-   MOCK_METHOD(void, SaveToDataBase, (Account& from, Account& to, int sum), (override));
+   
   };
 
   TEST(Account, GetBalance){
