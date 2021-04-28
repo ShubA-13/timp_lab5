@@ -5,6 +5,9 @@ class Account;
 class Transaction {
  public:
   Transaction();
+  
+  virtual void SaveToDataBase(Account& from, Account& 	to, int sum);
+
   virtual ~Transaction();
 
   bool Make(Account& from, Account& to, int sum);
@@ -15,8 +18,6 @@ class Transaction {
   void Credit(Account& accout, int sum);
   bool Debit(Account& accout, int sum);
 
-  // Virtual to test.
-  virtual void SaveToDataBase(Account& from, Account& to, int sum);
-
+  
   int fee_;
 };
