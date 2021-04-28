@@ -13,7 +13,7 @@
    // MOCK_METHOD(int, GetBalance, (), (const, override));
    // MOCK_METHOD(void, ChangeBalance, (int diff), (override));
    // MOCK_METHOD(void, Lock, (), (override));
-   MOCK_METHOD(void, int, (override));
+   MOCK_METHOD(void, Unlock, (), (override));
   };
 
   class MockTransaction: public Transaction{
